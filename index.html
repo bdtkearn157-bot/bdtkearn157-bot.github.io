@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Premium Software BUY</title>
+<meta charset="UTF-8">
+<title>Premium Software BUY</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f6f8;
+}
+.box{
+    max-width:700px;
+    background:#ffffff;
+    margin:50px auto;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+h1{
+    color:#222;
+}
+.price{
+    font-size:24px;
+    color:#0a8f08;
+    font-weight:bold;
+}
+.btn{
+    display:inline-block;
+    background:#007bff;
+    color:#fff;
+    padding:12px 22px;
+    border-radius:6px;
+    text-decoration:none;
+    margin-top:15px;
+}
+.wallet{
+    background:#f1f1f1;
+    padding:12px;
+    border-radius:6px;
+    word-break:break-all;
+}
+.small{
+    font-size:12px;
+    color:gray;
+}
+</style>
 </head>
 
-<body style="font-family: Arial, sans-serif; background:#f4f4f4; padding:40px;">
+<body>
+
+<div class="box">
 
 <h1>Premium Software BUY</h1>
 
@@ -14,37 +58,40 @@ This is a simple software designed for users.
 Easy to use and beginner friendly.
 </p>
 
-<h2>Price: 50 USDT</h2>
+<p class="price">Price: 50 USDT</p>
+
+<a class="btn" href="#pay">Buy with Crypto</a>
 
 <hr>
 
-<h2>Pay with Crypto</h2>
+<h2 id="pay">Pay with Crypto</h2>
 
 <p><b>USDT (TRC20)</b></p>
 
-<p><b>Wallet Address:</b></p>
-<p style="word-break: break-all;">
+<div class="wallet">
 TAEPHSX3irvqNV1x2AvQM4YMBysJMKNNh5
-</p>
+</div>
 
-<p style="font-size:13px; color:gray;">
-(Network: TRC20 only)
-</p>
+<p class="small">(Network: TRC20 only)</p>
+
+<h3>Scan QR Code</h3>
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=TAEPHSX3irvqNV1x2AvQM4YMBysJMKNNh5" alt="USDT QR">
 
 <p>
 After payment send TXID to:<br>
-Telegram:
 <a href="https://t.me/Moneyhacker23" target="_blank">
-@Moneyhacker23
+Telegram: @Moneyhacker23
 </a>
 </p>
 
 <hr>
 
-<p style="font-size:12px; color:gray;">
-Disclaimer: This software is for educational purposes only.
+<p class="small">
+Disclaimer: This software is for educational purposes only.  
 No profit or income guarantee is provided.
 </p>
+
+</div>
 
 </body>
 </html>
